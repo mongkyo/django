@@ -22,16 +22,16 @@
       <div class="card mb-2">
           <div class="card-body">
               <h5 class="card-title">
-                  <a href="view.post_detail">{{ post.title }}</a>
+                  <a href="posts/{{ post.id }}">{{ post.title }}</a>
               </h5>
               <h6 class="card-subtitle mb-2 text-muted">
-                  <a href="">{{ post.created_date }}</a>
+                  {{ post.created_date }}
               </h6>
               <p class="card-text">
-                  <a href="">{{ post.text|linebreaksbr|truncatechars:200 }}</a>
+                  {{ post.text|linebreaksbr|truncatechars:200 }}
               </p>
               <p class="text-right">
-                  <a href="">Author: {{ post.author }}</a>
+                  Author: {{ post.author }}
               </p>
           </div>
       </div>
